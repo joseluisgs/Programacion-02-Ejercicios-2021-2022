@@ -7,17 +7,19 @@ Programación - 02 Programación Estructurada y Modular. 1DAM. Ejercicios realiz
 ## ¿Cómo Colaborar?
 Estos ejercicios están resueltos por el alumnado y están basados en la relación de la [Unidad 2: Programación estructurada y Modular](https://github.com/joseluisgs/Programacion-02-2021-2022).
 
-Para subir tu ejercicio a GitHub, debes seguir los siguientes pasos:
+Para subir tu ejercicio a GitHub, **POR FAVOR SIGUES ESTAS NORMAS**:
 
 - Hazte un fork de este repositorio
 - Trabaja con GitFlow
 - Crea una reama feature con tu Iniciales y apellido, por ejemplo: /feature/JLGonzalez
-- En ella añade al directorio **src** todos los ficheros main de los ejercicios y auxiliares y módulos que estés usando de la siguiente manera:
-  - Por cada ejercicio llamarlo main-RR-EE-InicialesApellidos.ts. Solo debes añadir los ficheros main que uses no el resto de proyecto, pues lo sacamos de esta misma rama. RR es la relación del problema y EE el número del ejercicio. - Por ejemplo, main-04-16-JLGonzalez.ts es el fichero del problema 16 de la relación 4. Por ejemplo, mod-04-16-JLGonzalez.ts
+- En ella añade al directorio **src** todos los ficheros main de los ejercicios y auxiliares o modulos en la carpeta **mod**. Debes nombrarlos de la siguiente manera: 
+  - Por cada ejercicio llamarlo main-RR-EE-InicialesApellidos.ts. Solo debes añadir los ficheros main que uses no el resto de proyecto, pues lo sacamos de esta misma rama. RR es la relación del problema y EE el número del ejercicio. Por ejemplo, main-04-16-JLGonzalez.ts es el fichero del problema 16 de la relación 4.
+  - Los modulos que crees deben ir en la carpeta **mod**. Se deben llamar mod-RR-EE-InicialesApellidos.ts, por ejemplo mod-04-16-JLGonzalez.ts es el módulo del ejercicio 16 de la relación 4.
 - Cierra la Feature siguiendo el flujo de GitFlow, fusionando los cambios a Develop, pero no borres esa rama por si la vuelves a necesitar.
 - Confirma los cambios y sube los cambios a tu repositorio GitHub.
 - Hazme un pull request para que acepte los cambios y explícame dichos cambios en el directorio Develop.
 - Aplica las acciones oportunas para tener todo sincronizado
+- **SI NO SE SIGUEN ESTAS NORMAS SE TE INVALIDARÁ EN PULL REQUEST. PIENSA QUE ES POR EL BIEND E TODOS/AS.**
 
 !!! FIN !!! 😀 🤝
 
