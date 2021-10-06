@@ -1,4 +1,4 @@
-import mod from "./mod";
+import mod from "./mod/mod_Numeros_Primos_Gemelos_JAyl";
 
 let limitNumber: number = 10000;
 
