@@ -1,5 +1,13 @@
+/**
+ * Nombre: José Luis González
+ * GitHub: joseluisgs
+ * Fecha: 10/10/2019
+ * Descripción: Ejercicio de los primeros numeros primos
+ */
+
 import read from 'readline-sync';
 import chalk from 'chalk';
+import primo from './mod-04-01'
 
 // Suma de los n primeros números primos
 
@@ -12,20 +20,11 @@ do {
 
 // Repetimos hasta el limite
 for (let num = 2; num <= limite; num++) {
-  // Vamos a comprobar si es primo
-  let primo = true;
-  let contador = 2;
-  while ((primo) && (contador != num)) {
-    if (num % contador == 0)
-      primo = false;
-    contador++;
-  }
 
-  // Si es primo, lo sumamos
-  if (primo) 
+  // Si es primo, sumamos, llamamos a la función que calcula si un número es primo
+  if (primo.esPrimo(num))
     suma += num;
 
 }
 
 console.log(chalk.green("El resultado de la suma de los números primos entre 1 y " + limite + " es: " + suma));
-

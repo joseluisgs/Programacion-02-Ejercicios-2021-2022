@@ -1,3 +1,10 @@
+/**
+ * Nombre: José Luis González
+ * GitHub: joseluisgs
+ * Fecha: 10/10/2019
+ * Descripción: Descripción de sistáxis básica de TypeScript
+ */
+
 // Zona de declaración de librerías y módulos propios o del sistema
 // ers importante que sepas que aunque nos apoyemos en determinadas librerías hay que saber implementar determinadas operaciones
 import read from 'readline-sync'; // --> Librería para leer datos por consola. Puedes leer sobre ella y aprender a usarla en: https://github.com/anseki/readline-sync
