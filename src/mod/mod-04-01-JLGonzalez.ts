@@ -1,3 +1,10 @@
+/**
+ * Nombre: José Luis González
+ * GitHub: joseluisgs
+ * Fecha: 06/10/2021
+ * Descripción: Ejercicio 04-01. Módulo que calcula si un número es primo
+ */
+
 
 /**
  * Funcion que devuelve si un numero es primo o no
@@ -15,5 +22,9 @@ function esPrimo(num: number): boolean {
   return esPrimo;
 }
 
+function presentacion() {
+  console.log("Usando librería de números primos");
+}
+
 // Exportamos las funciones que queramos que sea publicas
-export default { esPrimo };
+export default { esPrimo, presentacion };
