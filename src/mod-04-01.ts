@@ -1,7 +1,7 @@
 /**
  * Nombre: José Luis González
  * GitHub: joseluisgs
- * Fecha: 10/10/2019
+ * Fecha: 06/10/2021
  * Descripción: Ejercicio 04-01. Módulo que calcula si un número es primo
  */
 
