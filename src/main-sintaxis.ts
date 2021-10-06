@@ -108,3 +108,9 @@ do {
 for (let i = 0; i < 10; i++) {
   console.log('Contador: ' + i);
 }
+
+/**
+ * Todo programa debe emezar con una funcion main()
+ */
+
+// importamos los modulos con import

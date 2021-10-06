@@ -22,5 +22,9 @@ function esPrimo(num: number): boolean {
   return esPrimo;
 }
 
+function presentacion() {
+  console.log("Usando librería de números primos");
+}
+
 // Exportamos las funciones que queramos que sea publicas
-export default { esPrimo };
+export default { esPrimo, presentacion };
