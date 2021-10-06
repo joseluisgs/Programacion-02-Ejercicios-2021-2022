@@ -19,7 +19,7 @@ Para subir tu ejercicio a GitHub, **POR FAVOR SIGUES ESTAS NORMAS**:
 - Confirma los cambios y sube los cambios a tu repositorio GitHub.
 - Hazme un pull request para que acepte los cambios y explícame dichos cambios en el directorio Develop.
 - Aplica las acciones oportunas para tener todo sincronizado
-- **SI NO SE SIGUEN ESTAS NORMAS SE TE INVALIDARÁ EN PULL REQUEST. PIENSA QUE ES POR EL BIEND E TODOS/AS.**
+- **SI NO SE SIGUEN ESTAS NORMAS SE TE INVALIDARÁ EN PULL REQUEST. PIENSA QUE ES POR EL BIEN DE TODOS/AS.**
 
 !!! FIN !!! 😀 🤝
 
