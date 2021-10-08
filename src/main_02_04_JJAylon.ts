@@ -1,3 +1,10 @@
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Cálculo de la media de tres números
+ */
+
 import { O_TRUNC } from 'constants';
 import read from 'readline-sync';
 

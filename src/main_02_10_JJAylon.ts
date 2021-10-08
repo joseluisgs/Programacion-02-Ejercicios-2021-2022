@@ -1,3 +1,10 @@
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Juego 7 y media 
+ */
+
 import read from 'readline-sync';
 
 let condition : boolean = false

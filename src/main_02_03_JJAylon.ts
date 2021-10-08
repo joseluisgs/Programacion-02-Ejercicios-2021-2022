@@ -1,3 +1,10 @@
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Cálculo del perimetro y el area de una circunferencia 
+ */
+
 import read from 'readline-sync';
 
 const PI = Math.PI;

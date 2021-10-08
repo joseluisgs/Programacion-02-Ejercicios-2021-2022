@@ -1,3 +1,10 @@
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Identificar si un número tiene decimales 
+ */
+
 import read from 'readline-sync';
 
 let num : number = 0;

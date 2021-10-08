@@ -1,3 +1,10 @@
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Raiz cuadrada de un número
+ */
+
 import read from 'readline-sync';
 
 let num : number = 0;

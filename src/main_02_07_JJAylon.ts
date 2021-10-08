@@ -1,4 +1,11 @@
-import read from 'readline-sync';
+/**
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Identificador de años bisiestos
+ */
+
+ import read from 'readline-sync';
 
 let num : number = 0;
 
