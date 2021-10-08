@@ -2,7 +2,13 @@
  * Nombre: Joaquín Ayllón
  * GitHub: JoaquinAyG
  * Fecha: 08/10/2021
- * Descripción: Juego 7 y media 
+ * Descripción: Juego 7 y media: El juego consiste en recibir la cantidad que tu quieras de cartas de la baraja
+ * española, cada carta tiene su numero como su valor a excepción de las figuras que todas ellas valdrán 0.5 puntos.
+ * El juego consiste en tener la jugada con los puntos más altos posibles sin sobrepasar los 7.5, la banca jugará
+ * despues de que el jugador resuelva su jugada y recibirá cartas hasta superarle o sobrepasar los 7.5 puntos.
+ * Cada apuesta se realiza antes de recibir las cartas, si tu jugada vence a la banca te dobla tu apuesta,
+ * por otro lado si la banca vence a tu jugada perderás tu apuesta. Podrás apostar hasta que quieras o hasta que te 
+ * quedes sin dinero.
  */
 
 import read from 'readline-sync'
@@ -10,7 +16,7 @@ import mod from "./mod/mod_7_y_Media_JJAylon";
 
 //Declaración de variables
 
-let initialMoney: number = 10; //(Podria ser const ya que lo asignamos antes de correr el programa y no s emodifia)
+let initialMoney: number = 10; //(Podria ser const ya que lo asignamos antes de correr el programa y no se modifia)
 let money: number;
 money = initialMoney;
 let bet = 0;

@@ -8,14 +8,10 @@
 function primeNumberCalculation(num: number): boolean {
     //Numeros primos, devuelve boolean.
     let isPrime: boolean = true;
-
-    let counter = 2;
-    while ((isPrime) && (counter != num)) {
-        if (num % counter == 0) {
+    for (let i = 3; i < Math.sqrt(num) && isPrime; i += 2)
+        if (num % i == 0) {
             isPrime = false;
-            counter++;
         }
-    }
     return isPrime
 }
 
