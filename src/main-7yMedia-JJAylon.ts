@@ -12,7 +12,7 @@
  */
 
 import read from 'readline-sync'
-import mod from "./mod/mod_7_y_Media_JJAylon";
+import mod from "./mod/mod-7yMedia-JJAylon";
 
 //Declaración de variables
 

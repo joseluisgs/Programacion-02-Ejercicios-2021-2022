@@ -7,7 +7,7 @@ Programación - 02 Programación Estructurada y Modular. 1DAM. Ejercicios realiz
 ## ¿Cómo Colaborar?
 Estos ejercicios están resueltos por el alumnado y están basados en la relación de la [Unidad 2: Programación estructurada y Modular](https://github.com/joseluisgs/Programacion-02-2021-2022).
 
-Para subir tu ejercicio a GitHub, **POR FAVOR SIGUES ESTAS NORMAS**:
+Para subir tu ejercicio a GitHub, **POR FAVOR SIGUE ESTAS NORMAS**:
 
 - Hazte un fork de este repositorio
 - Trabaja con GitFlow

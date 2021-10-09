@@ -4,7 +4,7 @@
  * Fecha: 08/10/2021
  * Descripción: Calculo numeros primos gemelos
  */
-import mod from "./mod/mod_Numeros_Primos_Gemelos_JJAylon";
+import mod from "./mod/mod-NumerosPrimosGemelos-JJAylon";
 
 let limitNumber: number = 10000;
 
