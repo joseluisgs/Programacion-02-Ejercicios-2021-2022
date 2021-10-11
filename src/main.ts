@@ -1,59 +1,89 @@
 /**
- * Nombre: José Luis González
- * GitHub: joseluisgs
- * Fecha: 06/10/2021
- * Descripción: Ejercicio de los primeros numeros primos
+ * Nombre: Joaquín Ayllón
+ * GitHub: JoaquinAyG
+ * Fecha: 08/10/2021
+ * Descripción: Juego 7 y media 
  */
 
-import read from 'readline-sync';
-import chalk from 'chalk';
-import primo from './mod/mod-04-01-JLGonzalez'
-
-// Suma de los n primeros números primos
-main();
-
-/**
- * Función principal
- */
-function main() {
-
-  let limite: number = 0;
-  let suma: number = 0;
-
-  primo.presentacion();
-
-  do {
-    limite = read.questionInt(chalk.yellow('Dime un número: '));
-  } while (limite <= 0);
-
-  // Repetimos hasta el limite
-  for (let num = 2; num <= limite; num++) {
-
-    // Si es primo, sumamos, llamamos a la función que calcula si un número es primo
-    // La llamo de manera local o usando un módulo externo 
-    // Para que veáis la diferencia
-    if (esPrimo(num) && primo.esPrimo(num))
-      suma += num;
-
-  }
-
-  console.log(chalk.green("El resultado de la suma de los números primos entre 1 y " + limite + " es: " + suma));
-}
-
-/**
- * Funcion LOCAL que devuelve si un numero es primo o no
- * @param num Numero para saber si es primo
- * @returns Verdadero si es primo
- */
-function esPrimo(num: number): boolean {
-  let esPrimo = true;
-  let contador = 2;
-  while ((esPrimo) && (contador != num)) {
-    if (num % contador == 0)
-      esPrimo = false;
-    contador++;
-  }
-  return esPrimo;
-}
-
-
+ import read from 'readline-sync'
+ import mod from "./mod/mod_7_y_Media_JJAylon";
+ 
+ //Declaración de variables
+ 
+ let initialMoney: number = 10; //(Podria ser const ya que lo asignamos antes de correr el programa y no se modifia)
+ let money: number;
+ money = initialMoney;
+ let bet = 0;
+ let keepPlay: boolean = true;
+ let sum = 0;
+ let cardStorer;
+ let wantMore: boolean = true;
+ let bankSum: number = 0;
+ 
+ //Inicio del programa
+ while (keepPlay && money > 0) {
+     
+     console.log("Tienes " + money + " euros, ¿Quieres jugar?")
+     keepPlay = read.keyInYNStrict(" ");
+     if (keepPlay) {
+ 
+         sum = 0;
+         bankSum = 0;
+         wantMore = true;
+ 
+         do {
+             //Funcion de apuesta
+             bet = read.questionFloat("¿Cuanto dinero quieres apostar? ")
+         } while (bet > money)
+         //Obtencion y printado de la carta inicial
+         cardStorer = mod.randomCardGenerator();
+         console.log("Tu carta es: " + mod.cardToPlayer(cardStorer));
+         sum = sum + mod.cardToGame(cardStorer);
+ 
+         while (wantMore && sum <= 7.5) {
+             //Funcion para otorgar cartas al jugador y suma de sus valores
+             console.log("Quieres más cartas? ");
+             wantMore = read.keyInYNStrict("");
+             if (wantMore) {
+                 cardStorer = mod.randomCardGenerator();
+                 console.log("Tu carta es: " + mod.cardToPlayer(cardStorer));
+                 sum = sum + mod.cardToGame(cardStorer);
+             }
+         }
+         //Valoración de condiciones de victoria y gestion de apuesta
+         if (sum > 7.5) {
+             console.log("Has superado los 7.5, has perdido " + bet + " euros");
+             money = money - bet;
+         } else {
+             console.log("Tu jugada es de: " + sum)
+ 
+             while (sum > bankSum && bankSum <= 7.5) {
+                 cardStorer = mod.randomCardGenerator();
+                 bankSum = bankSum + mod.cardToGame(cardStorer);
+                 console.log("La banca roba carta y recibe un: " + mod.cardToPlayer(cardStorer));
+ 
+             }
+             if (sum > bankSum || bankSum > 7.5) {
+                 console.log("Tu jugada es de: " + sum);
+                 console.log("La de la banca es de: " + bankSum);
+                 console.log("Has ganado " + bet + " euros");
+                 money = money + bet;
+ 
+             } else if (sum <= bankSum) {
+ 
+                 console.log("Tu jugada es de: " + sum);
+                 console.log("La de la banca es de: " + bankSum);
+                 console.log("Has perdido " + bet + " euros");
+                 money = money - bet;
+             }
+         }
+     }
+ }
+ //Valoración de ganancias o perdidas
+ console.log("El juego ha terminado");
+ console.log("Has acabado con: " + money);
+ if (money > initialMoney) {
+     console.log("Tu ganancia es de: " + (money - initialMoney));
+ } else {
+     console.log("Tu perdida es de: " + (initialMoney - money));
+ }
