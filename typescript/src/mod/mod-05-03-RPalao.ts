@@ -5,8 +5,6 @@ import chalk from 'chalk';
  * @returns si el numero es positivo o negativo
  */
 
-import { channel } from "diagnostics_channel";
-
 function esPositivo(num:number):void {
     let positivo: boolean = true;
 
@@ -18,7 +16,6 @@ function esPositivo(num:number):void {
         positivo = true;
     }    
 }
-
 
 
 //Exportación funciones y procedimientos
