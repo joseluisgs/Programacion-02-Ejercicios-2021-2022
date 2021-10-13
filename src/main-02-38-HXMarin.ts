@@ -22,7 +22,7 @@ do{
      
     switch(i){
         case 23:
-            factoriales();
+            factoriales()
             break;
         case 29:
            colegio();
